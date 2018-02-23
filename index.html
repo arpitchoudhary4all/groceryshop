@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"href="css/custom/design.css">
+    <script src="js/custom/controller.js"></script>
+    <script src="js/custom/newuser.js"></script>
+    <script src="js/custom/item.js"></script>
+    <script src="js/custom/listoperations.js"></script>
+    <script src="js/custom/printsubmenu.js"></script>
+    <script src="js/custom/utils.js"></script>
+    <script src="js/custom/validate.js"></script>
+    <script src="js/custom/user.js"></script>
+    <script src="js/custom/useroperations.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2><img src="images/cart.png" width="80px">ONLINE GROCERY SHOPPING</h2>
+        </header>
+        <div id="banner">
+            <div class="initial col-sm-offset-8 col-sm-4">
+                <div id="register">
+                    <fieldset>
+                        <legend>REGISTER SCREEN</legend>
+                        <span class="red">*&nbsp;REQUIRED FIELDS</span>
+                        <div class="form-group">
+                                <label for="name">NAME&nbsp;<span class="red">*</span><span class="namealert red"></span></label>
+                                <input type="text" id="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="userid">USER-ID&nbsp;<span class="red">*</span><span class="idalert red"></span></label>
+                                <input type="text" id="userid" class="form-control">                                
+                            </div>
+                            <div class="form-group">
+                                <label for="password">PASSWORD&nbsp;<span class="red">*</span><span class="passwordalert red"></span></label>
+                                <input type="password" id="password" class="form-control">                                
+                            </div>
+                            <div class="form-group">
+                                <label for="address">ADDRESS&nbsp;<span class="red">*</span><span class="addressalert red"></span></label>
+                                <input type="text" id="address" class="form-control">                                
+                            </div>
+                            <div class="form-group">
+                                <button id="registerbtn">REGISTER</button>
+                                <button id="movetologin">EXISTING USER</button>
+                            </div>
+                    </fieldset>
+                </div>
+                <div id="login">
+                    <fieldset>
+                        <legend>LOGIN SCREEN</legend>
+                            <div class="form-group">
+                                <label for="loginuserid">USER-ID&nbsp;<span class="red" id="alertbox"></span></label>
+                                <input type="text" id="loginuserid" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="loginpassword">PASSWORD</label>
+                                <input type="password" id="loginpassword" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <button id="loginbtn">LOGIN</button>
+                                <button id="movetoregister">NEW USER</button>
+                            </div>
+                    </fieldset>
+                </div>
+            </div>  
+        </div>    
+        <div id="cartlist">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody id="carttable"></tbody>
+            </table>
+            <button class="proceed">PLACE ORDER</button>
+        </div>
+        <div class="mycart">
+            <button class="cartbtn">
+                <img src="images/cart.png" width="50px">
+                <span>MY CART</span>
+            </button>
+        </div>
+        <div id="mainmenu"> </div>
+        <div id="submenu"></div>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?h=350&auto=compress&cs=tinysrgb);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 660px;
+}
+header{
+    background-color: black;
+    color: white;
+ }
+header h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
+}
+#banner {
+    height: 475px;
+    background-size: 100% 100%;
+    animation: slider 20s infinite linear;
+}
+@keyframes slider {
+    0% {
+        background-image: url("https://images.pexels.com/photos/36740/vegetables-vegetable-basket-harvest-garden.jpg?h=350&auto=compress&cs=tinysrgb");
+    }
+    20% {
+        background-image: url("https://images.pexels.com/photos/372882/pexels-photo-372882.jpeg?h=350&auto=compress&cs=tinysrgb");
+    }
+    40% {
+        background-image: url("https://images.pexels.com/photos/36740/vegetables-vegetable-basket-harvest-garden.jpg?h=350&auto=compress&cs=tinysrgb");
+    }
+    60% {
+        background-image: url("https://images.pexels.com/photos/372882/pexels-photo-372882.jpeg?h=350&auto=compress&cs=tinysrgb");
+    }
+    80% {
+        background-image: url("https://images.pexels.com/photos/36740/vegetables-vegetable-basket-harvest-garden.jpg?h=350&auto=compress&cs=tinysrgbg");
+    }
+    100% {
+        background-image: url("https://images.pexels.com/photos/372882/pexels-photo-372882.jpeg?h=350&auto=compress&cs=tinysrgb");
+    }
+}
+.initial{
+    padding: 10px;
+}
+.red{
+    font-size: 10px;
+    color: red;
+}
+legend{
+    text-align: center;
+    font-weight: bold;
+}
+#login,#register{
+    background-color:#E4DEDE;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 1% 1%;
+}
+#login{
+    margin-top: 65px;
+}
+.welcome{
+    color: white;
+    font-size: 40px;
+    margin-left: 2%;
+}
+.mycart{
+    display: none;
+    position: absolute;
+    top: 17%;
+    right: 9%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cartbtn{
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    border-radius: 5%;
+}
+#mainmenu{
+    margin: 0% 35%;
+}
+.btnstyle{
+    font-size: 20px;
+    margin: 5% 2%;
+    font-family: fantasy;   
+}
+.imgdiv,.datadiv{
+    display: inline-block;
+}
+.imgsize{
+    width: 80px;
+    height: 60px;
+}
+.likes{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    margin: 0px 5px;
+    padding: 5px 8px;
+    border: 0px;
+}
+.name{
+    font-size: 20px;
+}
+.seller,.price,.quantity,.addtocart{
+    margin: 0px 12px;
+    font-size: 15px;
+}
+.addtocart img{
+    width: 30px;
+}
+#cartlist{
+    display: none;
+    position: absolute;
+    top: 30%;
+    background-color: burlywood;
+    padding-left: 2px;
+}
+td{
+    width: 284px;
+    text-align: center;
+}
+.proceed{
+    display:none;
+    margin-left: 45%;
+}
+.place{
+    margin-left: 40%;
+}
